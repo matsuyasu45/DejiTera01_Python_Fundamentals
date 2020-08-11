@@ -11,10 +11,6 @@ import csv  # csvファイルの読込用パッケージのインポート
 import datetime     # 日付の文字列を日付型の値に変換するためにインポート
 import matplotlib.pyplot as pypl  # パッケージの名前が長いのでpyplと略します。
 
-date_str = "2017/11/06"
-date_formatted = datetime.datetime.strptime(date_str, "%Y/%m/%d")
-print(date_formatted) # 2017-11-06 00:00:00
-
 pcr_file = open("./pcrdata.csv", mode="r", encoding="utf_8")
                     # ファイルを読取モード（r）で開く。文字コードはUTF-8として読込み。
                     # 文字コードを指定しないと文字化けすることがあるので、常に指定を。
