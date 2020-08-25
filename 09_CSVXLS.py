@@ -78,8 +78,8 @@ ws2 = wb2.active
 print("[03]")
 for i in range(1, 10):  # さっきの九九の表を読みだしてみる。
     for j in range(1, 10):
-        data = ws2.cell(row=i+1, column=j).value   #i+1行、j列のセル（cell）の値（value）を参照
-        print(f"{data:2d} ",end="")    # pの値を2桁のd(digit=数値）で表示する。
+        value = ws2.cell(row=i+1, column=j).value   #i+1行、j列のセル（cell）の値（value）を参照
+        print(f"{value:2d} ",end="")    # pの値を2桁のd(digit=数値）で表示する。
     print("")   # iの段が終わったら改行（print文はデフォルトで改行する。）
 
 wb2.close() # 保存する必要はないが、クローズは律儀にやっておく。定番、当然。
